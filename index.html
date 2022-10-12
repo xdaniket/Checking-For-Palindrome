@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  /**
+   * Step 1 - We will create a function to find a given input is palindrome or not.
+   * Step 2 - Run a loop to reverse the given input.
+   * Step 3 - Create a new variable for storing a reverse value.
+   * Step 4 - Make a condition the given input and our new variable is equal or not equal.
+   * Step 5 - If it is not equal nd the given input is empty so it show a meassge like.
+   * Step 5.1- It's not a Palindrome. otherwise It's Palindrome.
+   */
+
+  const matchStr = (inputStr) => {
+    let result = "";
+    for (let i = inputStr.length - 1; i >= 0; i--) {
+      result += inputStr[i];
+    }
+    return result !== inputStr || inputStr === ""
+      ? "It's not Palindrome"
+      : "It's Palindrome";
+  };
+  console.log(matchStr("noon"));
+</script>
